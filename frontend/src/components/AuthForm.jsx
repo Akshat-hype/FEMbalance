@@ -1,5 +1,6 @@
 import React from "react";
 import "./AuthForm.css"; // Keep your CSS file
+import { signInWithGoogle } from "./firebase";
 
 const AuthForm = () => {
   return (
@@ -17,8 +18,7 @@ const AuthForm = () => {
           <p className="sub-text">Continue with your Google account</p>
 
           {/* Google Auth Button */}
-          <button className="google-btn">
-           
+          <button className="google-btn" onClick={signInWithGoogle}>
             Continue with Google
           </button>
         </div>
