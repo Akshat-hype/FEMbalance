@@ -5,24 +5,24 @@
   box-sizing: border-box;
 }
 
-.auth-container {
-  min-height: 100%;
-  width: 100%;
-  background: linear-gradient(to right, #d7e1ec, #1f1f1f);
+/* Centering the auth-box */
+body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 33%;;
+  min-height: 100vh;
+  background-color: hsla(0, 0%, 50%, 0.26); /* Optional: same background as the screenshot */
 }
 
 .auth-box {
   display: flex;
   width: 850px;
-  height: 400px;
+  height: auto;
   background-color: #ffffff;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  /* Removed margin-left */
 }
 
 /* Left Side */
@@ -92,7 +92,8 @@
     height: auto;
   }
 
-  .auth-left, .auth-right {
-    padding: 30px;
+  .auth-left,
+  .auth-right {
+    padding: 20px;
   }
 }

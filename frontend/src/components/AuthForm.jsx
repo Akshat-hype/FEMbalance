@@ -3,7 +3,7 @@ import "./AuthForm.css"; // Keep your CSS file
 
 const AuthForm = () => {
   return (
-    <div className="auth-container">
+    // <div className="auth-container">
       <div className="auth-box">
         {/* Left Side */}
         <div className="auth-left">
@@ -23,7 +23,7 @@ const AuthForm = () => {
           </button>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
