@@ -1,0 +1,127 @@
+/* Background and Centering */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #e3e3e3, #cfdff5);
+}
+
+/* Main Box */
+.auth-box {
+  display: flex;
+  width: 800px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Side */
+.auth-left {
+  width: 50%;
+  background: #007bff;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.auth-left h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.auth-left p {
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #007bff;
+}
+
+/* Right Side */
+.auth-right {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-right h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sub-text {
+  font-size: 14px;
+  color: gray;
+  margin: 10px 0;
+}
+
+/* Google Button */
+.google-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.google-btn img {
+  width: 20px;
+}
+
+.google-btn:hover {
+  background: #f5f5f5;
+}
+
+/* Input Fields */
+.auth-right input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Sign Up Button */
+.btn-primary {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
