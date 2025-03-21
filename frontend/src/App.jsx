@@ -5,6 +5,7 @@ import AuthForm from "./components/AuthForm"; // Import the login page
 import Page1 from "./pages/Page1";
 import Page3 from "./pages/Page3";
 import Page4 from "./pages/Page4";
+import PeriodInfo from "./pages/PeriodInfo";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       </Routes>
     </Router>
   );
+  // return <PeriodInfo />;
 };
 
 export default App;
