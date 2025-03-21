@@ -1,30 +1,36 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "./ImageSlider.css"; // Import CSS file
+import "./ImageSlider.css";
 
 const ImageSlider = () => {
-  const images = [
-    ".\assets\image1.webp",
-    ".\assets\image2.webp",
-    
-  ];
+  const navigate = useNavigate();
 
   return (
     <div className="slider-container">
-      {/* Swiper Slider */}
       <Swiper loop={true} className="slider">
-        {images.map((img, index) => (
-          <SwiperSlide key={index}>
-            <img src={img} alt={`Slide ${index + 1}`} className="slide-image" />
-          </SwiperSlide>
-        ))}
+        <SwiperSlide>
+          <img src=".assetsimage1.webp" alt="Slide 1" className="slide-image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src=".assetsimage2.webp" alt="Slide 2" className="slide-image" />
+        </SwiperSlide>
       </Swiper>
 
-      {/* Fixed Bottom Buttons */}
       <div className="button-container">
-        <button className="button button-blue">Create an account</button>
-        <button className="button button-green">Already have an account</button>
+        <button
+          className="button button-blue"
+          onClick={() => navigate("/login")}
+        >
+          Create an account
+        </button>
+        <button
+          className="button button-green"
+          onClick={() => navigate("/login")}
+        >
+          Already have an account
+        </button>
       </div>
     </div>
   );
