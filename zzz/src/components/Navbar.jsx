@@ -1,54 +1,38 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { FiMenu, FiX } from "react-icons/fi";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
-// import logo from "../assets/gla_lgog.webp"; // Update the path if needed
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-
   return (
     <nav className="navbar">
-      {/* Logo */}
-      <div className="logo-container">
-        <Link to="/" onClick={() => setMenuOpen(false)}>
-          <img src={logo} alt="Logo" className="navbar-logo" />
-        </Link>
-      </div>
-
-      {/* Navigation Links */}
-      <ul className={`nav-links ${menuOpen ? "nav-open" : ""}`}>
-        {[
-          "Home",
-          "Committee",
-          "Keynote Speakers",
-          "Tutorial",
-          "Registration",
-          "Call For Paper",
-          "Submission",
-          "Venue",
-          "Accommodation",
-          "Gallery",
-          "Contact Us",
-          "Sponsors",
-        ].map((item) => (
-          <li key={item}>
-            <Link
-              to={`/${item.toLowerCase().replace(/\s+/g, "")}`}
-              onClick={() => setMenuOpen(false)}
-            >
-              {item}
-            </Link>
-          </li>
-        ))}
+      <div className="logo">🌸 FEMbalance</div>
+      <ul className="nav-links">
+        <li>
+          <NavLink to="/" className="nav-item">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/calendar" className="nav-item">
+            Calendar
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/period-info" className="nav-item">
+            Period Info
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/exercise" className="nav-item">
+            Exercise
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/diet" className="nav-item">
+            Diet
+          </NavLink>
+        </li>
       </ul>
-
-      {/* Mobile Menu Button */}
-      <button className="menu-button" onClick={toggleMenu}>
-        {menuOpen ? <FiX /> : <FiMenu />}
-      </button>
     </nav>
   );
 };

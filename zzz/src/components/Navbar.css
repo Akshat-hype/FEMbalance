@@ -1,150 +1,64 @@
-/* General Styling */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #f8f9fa;
-}
-
-/* Navbar Container */
+/* Navbar container */
 .navbar {
-  position: fixed;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 92%;
-  background: white;
-  padding: 12px 18px;
+  position: fixed; /* Sticks to the top */
+  top: 10px; /* Slight margin from top */
+  left: 2%;
+  right: 2%;
+  width: 92%; /* Covers almost the full width */
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 100;
-  border-radius: 10px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease-in-out;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.3); /* Translucent effect */
+  backdrop-filter: blur(10px);
+  padding: 15px 30px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensures it stays above other elements */
 }
 
-/* Logo */
-.logo-container img {
-  height: 60px;
-  width: auto;
+/* Logo styling */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #5489d4; /* Feminine color */
 }
 
-/* Navigation Links */
+/* Navigation menu */
 .nav-links {
-  display: flex;
-  gap: 10px; /* Reduced Space Between Links */
   list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  gap: 25px;
 }
 
-.nav-links li {
-  text-align: center;
-}
-
-.nav-links li a {
+/* Navigation items */
+.nav-links .nav-item {
   text-decoration: none;
-  color: black;
-  font-size: 14px; /* Reduced Font Size */
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-  padding: 6px 10px; /* Reduced Padding */
-  display: inline-block;
-  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  padding: 10px 18px;
+  border-radius: 15px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Hover Effect */
-.nav-links li a:hover {
+/* Hover and active state */
+.nav-links .nav-item:hover,
+.nav-links .nav-item.active {
+  background: #5489d4;
   color: white;
-  background-color: #007bff;
-  box-shadow: 0px 3px 6px rgba(0, 123, 255, 0.15);
 }
 
-/* Mobile Menu Button */
-.menu-button {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  color: #000;
-}
-
-/* Mobile Menu */
-@media (max-width: 1182px) {
-  .nav-links {
-    display: none;
-  }
-
-  .menu-button {
-    display: block;
-  }
-
-  .nav-open {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 55px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 94%;
-    background: white;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
-    padding: 10px 0;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .nav-open li {
-    padding: 10px 0;
-  }
-
-  .nav-open li a {
-    display: block;
-    padding: 10px;
-    font-size: 16px;
-  }
-}
-
-/* Animation */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .nav-open {
-    animation: fadeIn 0.3s ease-in-out;
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
   }
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
+  .nav-links {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 15px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* Scrollable Menu */
-.nav-open {
-  max-height: 600px; /* Adjust height as needed */
-  overflow-y: auto;
-  scrollbar-width: thin; /* For Firefox */
-  /* scrollbar-color: #007bff transparent; For Firefox */
-}
-
-/* For Webkit Browsers (Chrome, Safari) */
-.nav-open::-webkit-scrollbar {
-  width: 6px;
-}
-
-.nav-open::-webkit-scrollbar-thumb {
-  background-color: #007bff;
-  border-radius: 10px;
-}
-
-.nav-open::-webkit-scrollbar-track {
-  background: transparent;
 }
