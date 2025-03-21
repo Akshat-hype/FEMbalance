@@ -1,10 +1,11 @@
 import React from "react";
 import AuthForm from "./components/AuthForm";
 import ImageSlider from "./pages/ImageSlider";
+import Page3 from "./pages/Page1";
 
 function App() {
-  // return <AuthForm />;
-  return <ImageSlider />;
+  return <Page3/>;
+  return <Page1 />;
 }
 
 export default App;
