@@ -28,7 +28,7 @@ body {
 /* Left Side */
 .auth-left {
   flex: 1;
-  background-color: #007bff;
+  background-color: #c2185b;
   color: #fff;
   padding: 50px;
   display: flex;
@@ -74,14 +74,14 @@ body {
   border: 2px solid #333;
   background-color: #fff;
   color: #333;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
 }
 
 .google-btn:hover {
-  background-color: #f1f1f1;
+  background-color: #f5d1df;
 }
 
 /* Responsive Design */
