@@ -5,8 +5,7 @@ import "./Page4.css";
 const Page4 = () => {
   const navigate = useNavigate();
 
-  const handleNext = (event) => {
-    event.preventDefault(); // Prevent default form submission
+  const handleNext = () => {
     navigate("/periodinfo");
   };
 
@@ -27,9 +26,9 @@ const Page4 = () => {
           </label>
         </div>
         <br />
-        <button className="next-button" onClick={handleNext}>
+        {/* <button className="next-button" onClick={handleNext}>
           Next
-        </button>
+        </button> */}
       </div>
     </form>
   );

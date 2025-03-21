@@ -79,39 +79,6 @@ body {
   border-color: #c2185b;
 }
 
-/* Button */
-.continue-btn {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(to right, #9c27b0, #e91e63);
-  color: #fff;
-  font-size: 1rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.continue-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
-}
-.next-button {
-  margin-top: 20px;
-  padding: 10px 15px;
-  font-size: 16px;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.next-button:hover {
-  background-color: #0056b3;
-}
-
 /* Animations */
 @keyframes fadeIn {
   from {

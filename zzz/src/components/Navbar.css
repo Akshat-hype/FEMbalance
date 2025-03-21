@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Navbar Container */
+.navbar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%;
+  background: white;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Logo */
+.logo-container img {
+  height: 60px;
+  width: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 10px; /* Reduced Space Between Links */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  text-align: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px; /* Reduced Font Size */
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  padding: 6px 10px; /* Reduced Padding */
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+  color: white;
+  background-color: #007bff;
+  box-shadow: 0px 3px 6px rgba(0, 123, 255, 0.15);
+}
+
+/* Mobile Menu Button */
+.menu-button {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  color: #000;
+}
+
+/* Mobile Menu */
+@media (max-width: 1182px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94%;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-open li {
+    padding: 10px 0;
+  }
+
+  .nav-open li a {
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+/* Animation */
+@media (max-width: 768px) {
+  .nav-open {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Scrollable Menu */
+.nav-open {
+  max-height: 600px; /* Adjust height as needed */
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox */
+  /* scrollbar-color: #007bff transparent; For Firefox */
+}
+
+/* For Webkit Browsers (Chrome, Safari) */
+.nav-open::-webkit-scrollbar {
+  width: 6px;
+}
+
+.nav-open::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+.nav-open::-webkit-scrollbar-track {
+  background: transparent;
+}
