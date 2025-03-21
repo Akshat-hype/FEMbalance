@@ -5,9 +5,9 @@ import "./ImageSlider.css"; // Import CSS file
 
 const ImageSlider = () => {
   const images = [
-    "/images/image1.jpg",
-    "/images/image2.jpg",
-    "/images/image3.jpg",
+    ".\assets\image1.webp",
+    ".\assets\image2.webp",
+    
   ];
 
   return (
@@ -23,8 +23,8 @@ const ImageSlider = () => {
 
       {/* Fixed Bottom Buttons */}
       <div className="button-container">
-        <button className="button button-blue">Button 1</button>
-        <button className="button button-green">Button 2</button>
+        <button className="button button-blue">Create an account</button>
+        <button className="button button-green">Already have an account</button>
       </div>
     </div>
   );
