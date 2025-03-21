@@ -21,9 +21,7 @@ const AuthForm = () => {
       <div className="auth-right">
         <h2>Login</h2>
         <p className="sub-text">Continue with your Google account</p>
-
-        {/* Google Auth Button */}
-        <button className="google-btn" onClick={signInWithGoogle}>
+        <button className="google-btn" onClick={handleGoogleSignIn}>
           Continue with Google
         </button>
       </div>
