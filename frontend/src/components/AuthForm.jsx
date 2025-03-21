@@ -19,6 +19,7 @@ const AuthForm = () => {
 
         {/* Google Auth Button */}
         <button className="google-btn" onClick={signInWithGoogle}>
+          
           Continue with Google
         </button>
       </div>
