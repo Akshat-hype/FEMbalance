@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Calendar from "./pages/Calendar";
 
 const Home = () => <h1>Home Page</h1>;
-const Calendar = () => <h1>Calendar Page</h1>;
+
 const PeriodInfo = () => <h1>Period Info Page</h1>;
 const Exercise = () => <h1>Exercise Page</h1>;
 const Diet = () => <h1>Diet Page</h1>;

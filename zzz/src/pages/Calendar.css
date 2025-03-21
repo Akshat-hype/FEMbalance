@@ -1,0 +1,84 @@
+/* Calendar Container */
+.calendar-container {
+  width: 200%;
+  max-width: 1800px;
+  background-color: #0d0d0d;
+  color: #00aaff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-left: 70%;
+  margin-top: 20%;
+}
+
+/* Header */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 2px solid #00aaff;
+  color: #00aaff;
+  font-size: 18px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #00aaff;
+  color: black;
+}
+
+/* Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+/* Day Names */
+.calendar-day-name {
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 2px solid #00aaff;
+}
+
+/* Individual Days */
+.calendar-day {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.calendar-day:hover {
+  background-color: #00aaff;
+  color: black;
+}
+
+/* Days from Other Months */
+.other-month {
+  opacity: 0.4;
+}
+
+/* Current Date Highlight */
+.current-day {
+  background-color: #004488;
+  color: white;
+  border: 2px solid #00aaff;
+}
+
+/* Period Dates (Red) */
+.period-day {
+  background-color: #ff4a75;
+  color: white;
+}
