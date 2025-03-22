@@ -10,16 +10,20 @@ import PeriodInfo from "./pages/PeriodInfo";
 const App = () => {
   return (
     <Router>
+      
       <Routes>
         <Route path="/" element={<ImageSlider />} />
         <Route path="/login" element={<AuthForm />} />
         <Route path="/page1" element={<Page1 />} />
         <Route path="/page3" element={<Page3 />} />
         <Route path="/page4" element={<Page4 />} />
+       
       </Routes>
+   
     </Router>
+     
   );
-  // return <PeriodInfo />;
+  //return <PeriodInfo />;
 };
 
 export default App;

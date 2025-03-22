@@ -12,7 +12,8 @@ const AuthForm = () => {
   };
 
   return (
-    <div className="auth-box">
+    
+    <div className="auth-box"> 
       <div className="auth-left">
         <h2>Welcome Back!</h2>
         <p>Track your PCOS health with ease</p>
@@ -26,6 +27,7 @@ const AuthForm = () => {
         </button>
       </div>
     </div>
+
   );
 };
 

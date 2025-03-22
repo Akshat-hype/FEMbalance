@@ -6,7 +6,7 @@ import Calendar from "./pages/Calendar";
 const Home = () => <h1>Home Page</h1>;
 
 const PeriodInfo = () => <h1>Period Info Page</h1>;
-const Exercise = () => <h1>Exercise Page</h1>;
+import Exercise from "./pages/Exercise";
 const Diet = () => <h1>Diet Page</h1>;
 
 function App() {
