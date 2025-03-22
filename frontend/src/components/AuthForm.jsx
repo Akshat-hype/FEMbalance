@@ -8,7 +8,7 @@ const AuthForm = () => {
 
   const handleGoogleSignIn = async () => {
     await signInWithGoogle(); // Authenticate the user
-    navigate("/page1"); // Redirect to Page 1 after login
+    navigate("/QuestionForm"); // Redirect to Page 1 after login
   };
 
   return (
